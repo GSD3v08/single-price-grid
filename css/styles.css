@@ -1,0 +1,172 @@
+:root{
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Karla', sans-serif;
+
+    background-color: var(--light-gray);
+}
+
+.content{
+    width: 85%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    overflow: hidden;
+
+    border-radius: .4rem;
+}
+
+.mission-container,
+.suscription,
+.details{
+    padding: .5rem 2rem 1.4rem;
+
+}
+
+.mission-container{
+    background-color: white;
+}
+
+.title{
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+
+    color: var(--cyan);
+}
+
+.subtitle{
+    font-size: 1rem;
+
+    color: var(--bright-yellow);
+}
+
+.mission{
+    font-size: .85rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+
+    color: var(--grayish-blue);
+}
+
+.suscription{
+    background-color: var(--cyan);
+    color: white;
+}
+
+.suscription-type{
+    margin-bottom: 1rem;
+
+    font-size: 1.2rem;
+    font-size: 400;
+}
+
+.suscription-price{
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: .5rem;
+
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.suscription span{
+    margin-left: .5rem;
+
+    font-size: 1rem;
+    font-weight: 400;
+
+    color: var(--light-gray);
+
+}
+
+.suscription-detail{
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+.button{
+    display: block;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    text-decoration: none;
+
+    background-color: var(--bright-yellow);
+    color: white;
+    border-radius: .3rem;
+}
+
+.details{
+    background-color: hsl(179, 58%, 48%);
+    color: white;
+}
+
+.details-sub{
+    margin-bottom: 1rem;
+
+    font-size: 1.2rem;
+}
+
+.details p{
+    margin-top: 0;
+    margin-bottom: .3rem;
+
+    font-size: .9rem;
+
+    color: var(--light-gray);
+}
+
+@media (min-width:1200px){
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .content{
+
+        max-width: 750px;
+    }
+    .mission-container,
+    .suscription,
+    .details{
+        padding: 1.5rem 2.5rem 1.6rem;
+    }
+    .title{
+        font-size: 1.8rem;
+    }
+    .subtitle{
+        font-size: 1.3rem;
+    }
+
+    .mission{
+        font-size: 1rem;
+    }
+
+    .info{
+        display: flex;
+    }
+
+    .suscription,
+    .details{
+        width: 50%;
+    }
+    .details p{
+        font-size: .9rem;
+    }
+
+}
