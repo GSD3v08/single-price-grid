@@ -110,9 +110,7 @@ body{
 }
 
 .button:focus-visible{
-    outline: 3px solid var(--bright-yellow);
-    background-color: white;
-    color: var(--cyan);
+    outline: 3px solid white;
 }
 
 .details{
